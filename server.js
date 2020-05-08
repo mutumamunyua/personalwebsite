@@ -8,8 +8,8 @@ app.engine('handlebars', exphbs({
 app.set('view engine', 'handlebars');
 // setup express static public folder for css and js and images
 app.use(express.static('public'));
-
-const port = 4000;
+// setup environment variables
+const port = process.env.PORT || 4000;
 
 app.get('/', (req, res) => {
     res.render('home');
