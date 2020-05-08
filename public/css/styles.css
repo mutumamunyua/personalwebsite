@@ -4,7 +4,7 @@ h1{
 }
 
 #homepage{
-    color: blue;
+    text-align: center;
 }
 
 .para{
@@ -19,4 +19,9 @@ h1{
 img{
     width: 200px;
     height: auto;
+}
+
+.col-sm-4{
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
 }
