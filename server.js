@@ -52,7 +52,7 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
-app.post('/getMessage', (req, res) =>{
+app.post('/getMessage', (req, res) => {
     const newMessage = {
         name: req.body.name,
         email: req.body.email,
@@ -71,10 +71,10 @@ app.get('/displayMessage', (req, res) => {
         }else{
             res.render('displayMessage', {
                 messages:messages
-            })
+            });
         }
-    })
-})
+    });
+});
 
 // this is portfolio route handler
 app.get('/portfolio', (req, res) => {
