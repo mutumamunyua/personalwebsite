@@ -52,6 +52,10 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+app.get('/education', (req, res) => {
+    res.render('education');
+});
+
 app.post('/getMessage', (req, res) => {
     const newMessage = {
         name: req.body.name,
