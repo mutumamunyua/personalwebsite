@@ -1,4 +1,6 @@
-
+body{
+    background-color: rgb(148, 213, 216);
+}
 h1{
     color: red;
 }
@@ -24,4 +26,7 @@ img{
 .col-sm-4{
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
+}
+.fa{
+    color: aliceblue;
 }
