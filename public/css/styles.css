@@ -9,6 +9,12 @@ h1{
 #homepage{
     text-align: center;
 }
+#homepic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 .para{
     font-size: 30px;
