@@ -1,5 +1,7 @@
 const express = require('express');
+const Handlebars = require('handlebars');
 const exphbs = require('express-handlebars');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const keys = require('./config/keys');
@@ -10,7 +12,7 @@ mongoose.connect(keys.MongoURI)
 const app = express();
 // setup template engine
 app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
+    handlebars: allowInsecurePrototypeAccess(Handlebars)
 }));
 app.set('view engine', 'handlebars');
 // setup express static public folder for css and js and images
